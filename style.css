@@ -1,0 +1,71 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.hader-menu{
+background: aquamarine;
+}
+.hader-menu ul{
+  text-align: center;
+}
+.hader-menu ul li{
+  display: inline-block;
+  margin-left: -5px;
+}
+.hader-menu ul li a{
+  text-decoration: none;
+  padding: 19px 21px;
+  display: inline-block;
+  font-size: 20px;
+  transition: .3s;
+  border-left: 1px solid white;
+}
+.hader-menu ul li a:last-child{
+  border-right: 1px solid white;
+}
+.hader-menu ul li:hover > a{
+background: greenyellow;
+}
+/* drope Dowon */
+.hader-menu ul li{
+  position: relative;
+}
+
+.hader-menu ul li ul{ 
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 140px;
+  background: yellow;
+  border-top: 1px white solid;
+  transition: .4s;
+}
+.hader-menu ul li ul li{
+  display: block;
+  margin-left: 0;
+}
+.hader-menu ul li ul li a{
+  display: block;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.hader-menu ul ul li a:last-child{
+  border-right:none;
+}
+
+.hader-menu ul li ul{
+  opacity: 0;
+  visibility:hidden;
+  transform: scaley(0);
+  transform-origin: top center;
+}
+ 
+
+.hader-menu ul li:hover ul{
+  transform: scaley(1);
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.hader-menu ul li ul li a:hover{}
